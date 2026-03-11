@@ -1,0 +1,16 @@
+{
+  "name": "devlink",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Developer portfolio and project showcase platform built with the MERN stack.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
